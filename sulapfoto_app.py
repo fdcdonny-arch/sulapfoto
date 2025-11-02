@@ -33,7 +33,7 @@ PRESETS = {
         "Latar belakang berupa dinding dan lantai kayu yang hangat, dengan pencahayaan lembut dan hangat khas foto studio bayi. "
         "Sebuah tanaman hijau kecil di pot hitam diletakkan di samping sofa untuk menambah kesan alami dan hangat."
     ),
-    "🪷 Adat Jawa Baby": (
+    "👶 Adat Jawa Baby": (
         "Gunakan wajah pada foto yang di upload ini, pertahankan detail wajah dari foto asli. "
         "menjadi bayi baru lahir sedang tidur dengan damai di atas kursi kecil berwarna abu-abu lembut yang dilapisi kain bertekstur titik-titik putih. "
         "Bayi mengenakan pakaian tradisional Jawa lengkap dengan blangkon hitam bermotif batik merah-oranye di kepala, "
@@ -95,13 +95,13 @@ def generate_image(image_bytes, mime_type, user_prompt):
 # --- UI Streamlit ---
 
 st.set_page_config(
-    page_title="Sulap Foto AI Generatif",
+    page_title="Sulap Foto",
     page_icon="✨",
     layout="centered"
 )
 
-st.title("✨ Sulap Foto AI Generatif")
-st.markdown("Ubah gaya, pakaian, dan latar belakang foto Anda menggunakan **AI** (*Model: {}*).".format(MODEL_NAME))
+st.title("✨ Sulap Foto")
+st.markdown("Ubah gaya, pakaian, dan latar belakang foto Anda (*Model: {}*).".format(MODEL_NAME))
 
 # Inisialisasi state untuk menyimpan prompt input
 if 'current_prompt' not in st.session_state:
