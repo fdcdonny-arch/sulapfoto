@@ -9,7 +9,7 @@ import io
 # Pastikan Anda sudah menambahkan [secrets.toml] dengan:
 # gemini_api_key = "KUNCI_API_ANDA_DI_SINI"
 try:
-    API_KEY = st.secrets["gemini_api_key"]
+    API_KEY = st.secrets["GOOGLE_API_KEY"]
 except:
     # Fallback untuk testing lokal, TIDAK DIREKOMENDASIKAN untuk deployment
     google_api_key = st.secrets["GOOGLE_API_KEY"]
