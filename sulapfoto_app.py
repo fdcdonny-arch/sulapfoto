@@ -12,7 +12,7 @@ try:
     API_KEY = st.secrets["GOOGLE_API_KEY"]
 except:
     # Fallback untuk testing lokal, TIDAK DIREKOMENDASIKAN untuk deployment
-    google_api_key = st.secrets["GOOGLE_API_KEY"]
+    API_KEY = st.secrets["GOOGLE_API_KEY"]
     if not API_KEY:
         st.error("🔑 Kunci API Gemini tidak ditemukan. Harap simpan kunci Anda di Streamlit Secrets.")
 
